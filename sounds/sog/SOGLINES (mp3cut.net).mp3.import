@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://doysm3jpsmh61"
+path="res://.godot/imported/SOGLINES (mp3cut.net).mp3-d44499af6ae20f586e496983018a28ae.mp3str"
+
+[deps]
+
+source_file="res://sounds/sog/SOGLINES (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/SOGLINES (mp3cut.net).mp3-d44499af6ae20f586e496983018a28ae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

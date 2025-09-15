@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://i457s525h0ih"]
+
+[ext_resource type="Script" uid="uid://dnb3a6egckdwq" path="res://box_1.gd" id="1_x7wj0"]
+[ext_resource type="Texture2D" uid="uid://d0qxpvmxpl3tc" path="res://sprites/env/paper-box-cardboard-texture-3959066626.jpg" id="2_uu8g4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ap40d"]
+size = Vector2(128, 76)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3qlm"]
+size = Vector2(96.5, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g7uq8"]
+size = Vector2(197, 76)
+
+[node name="box1" type="RigidBody2D"]
+position = Vector2(679, -202)
+collision_mask = 3
+gravity_scale = 0.803
+lock_rotation = true
+script = ExtResource("1_x7wj0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(6.10352e-05, -1)
+scale = Vector2(0.0666667, 0.059375)
+texture = ExtResource("2_uu8g4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_ap40d")
+debug_color = Color(0.153294, 2.3199e-05, 0.597695, 0.42)
+
+[node name="diearea" type="Area2D" parent="." groups=["die"]]
+
+[node name="diecollison" type="CollisionShape2D" parent="diearea"]
+position = Vector2(-1, 45)
+shape = SubResource("RectangleShape2D_d3qlm")
+debug_color = Color(0.998222, 0, 0.14751, 0.42)
+
+[node name="signalhandler" type="Node" parent="."]
+
+[node name="grab area" type="Area2D" parent="." groups=["grab"]]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="grab area"]
+position = Vector2(0.5, -1)
+shape = SubResource("RectangleShape2D_g7uq8")
+debug_color = Color(0, 0.647733, 0.202654, 0.42)
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="body_entered" from="diearea" to="." method="_on_diearea_body_entered"]
+[connection signal="body_entered" from="grab area" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="grab area" to="." method="_on_grab_area_body_exited"]

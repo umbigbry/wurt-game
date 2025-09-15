@@ -1,0 +1,11 @@
+res://scene.tscn
+res://boxes.tscn
+res://box_1.gd
+res://diecollison.gd
+res://diearea.gd
+res://box1signal.gd
+res://grabhandler.gd
+res://globals.gd
+res://grabarea.gd
+res://collision_shape_2d_2.gd
+res://collision_shape_2d.gd
