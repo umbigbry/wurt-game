@@ -5,6 +5,10 @@ var grabbed: bool = false
 
 
 func _process(delta: float) -> void:
+	#if grabbed == true:
+		#$diearea.set_deferred("monitorable", false)
+	#if grabbed == false:
+		#$diearea.set_deferred("monitorable", true)
 	pass
 	
 	

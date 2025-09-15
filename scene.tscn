@@ -155,7 +155,7 @@ func _ready() -> void:
 	pass
 
 func _physics_process(delta: float) -> void:
-	print(grabbing)
+	print(canthrow)
 	Globals.playerposy = global_position.y
 	Globals.playerposx = global_position.x
 	Globals.playervelx = velocity.x
@@ -216,39 +216,46 @@ func _physics_process(delta: float) -> void:
 		
 		
 	move_and_slide()
-	#if holding == true:
-		#var timer := Timer.new()
-		#add_child(timer)
-		#timer.wait_time = 0.5
-		#timer.one_shot = true
-		#timer.start()
-		#timer.timeout.connect(_on_timer_timeout)
-
-#func _on_timer_timeout() -> void:
-	#canthrow = true
-		
-	
+	var timer := Timer.new()
+	add_child(timer)
+	timer.wait_time = 0.03
+	timer.one_shot = true
+	timer.timeout.connect(_on_timer_timeout)
+	#grabbing
 	if  grabbing == true and not box == null:
+		candie = false
+		box.grabbed = true
+		timer.start()
+		canthrow = true
 		holding = true
 		box.gravity_scale = 0
 		box.global_position = global_position + Vector2(15,-110)
 		box.linear_velocity = velocity
 		
 		
-	if grabbing == true and holding == true and Input.is_action_pressed(\"grab\") and canthrow == true:
+		
+	
+		
+		
+func _on_timer_timeout() -> void:
+	canthrow = true
+	if holding == true and Input.is_action_just_pressed(\"grab\") and canthrow == true:
 		throw()
-		
-		
-		
+
 func throw():
 	var direction := Input.get_axis(\"move_left\", \"move_right\")
+	candie = true
+	box.grabbed = false
 	canthrow = false
 	grabbing = false 
 	holding = false 
 	grab = false
-	box.gravity_scale = 0.803
-	box.linear_velocity = direction * Vector2(300,-600)
-
+	if box.linear_velocity.x >= 1:
+		box.gravity_scale = 0.803
+		box.linear_velocity = direction * Vector2(300,-600)
+	if box.linear_velocity.x <= 1:
+		box.gravity_scale = 0.803
+		box.linear_velocity.y = -650
 	
 func _on_sog_animation_finished() -> void:
 	get_node(\"../sog\").hide()
@@ -258,26 +265,15 @@ pass
 
 
 func _on_playerarea_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
-	#if area.is_in_group(\"die\"):a
-		#die = true
+	if area.is_in_group(\"die\") and candie == true:
+		die = true
 	if area.is_in_group(\"grab\") and holding == false:
 		box = area.get_parent()
 		
-		#var box = area.get_parent()
-		#print(box)
 		cangrab = true
-	#if area.is_in_group(\"grab\") and Input.is_action_just_pressed(\"grab\"):
-		
-		#area.scale *= 10
-		#var box = area.get_parent()
-		#print(box.grabbed)
-		#box.grabbed = true
-		#box.gravity_scale = 0
-		#box.global_position += Vector2(15,-110)
-		#box.linear_velocity.x = velocity.x
-		#box.linear_velocity.y = velocity.y
-		pass
-	pass # Replace with function body.
+	
+
+ 
 
 
 func _on_playerarea_area_shape_exited(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
