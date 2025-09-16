@@ -1,21 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757933443
+::res://::1757996345
 area_2d.gd::GDScript/GDScript::8958654251372644959::1757931843::0::1::::<>Area2D<><>0<>0<><>::
 box1signal.gd::GDScript/GDScript::2411236977322631060::1757931843::0::1::::<>Node<><>0<>0<><>::
 boxes.gd::GDScript/GDScript::2376328659442766510::1757931843::0::1::::<>RigidBody2D<><>0<>0<><>::
-boxes.tscn::PackedScene::623257352191529075::1757933418::0::1::::<><><>0<>0<><>::uid://dnb3a6egckdwq::::res://box_1.gd<>uid://d0qxpvmxpl3tc::::res://sprites/env/paper-box-cardboard-texture-3959066626.jpg
-box_1.gd::GDScript::8075483106603999544::1757933418::0::1::::<>RigidBody2D<><>0<>0<><>::
+boxes.tscn::PackedScene::623257352191529075::1757996345::0::1::::<><><>0<>0<><>::uid://dnb3a6egckdwq::::res://box_1.gd<>uid://d0qxpvmxpl3tc::::res://sprites/env/paper-box-cardboard-texture-3959066626.jpg
+box_1.gd::GDScript::8075483106603999544::1757978216::0::1::::<>RigidBody2D<><>0<>0<><>::
 collision_shape_2d.gd::GDScript/GDScript::4146998459683827727::1757931843::0::1::::<>CollisionShape2D<><>0<>0<><>::
-collision_shape_2d_2.gd::GDScript::4700099940529555280::1757933418::0::1::::<>CollisionShape2D<><>0<>0<><>::
+collision_shape_2d_2.gd::GDScript::4700099940529555280::1757933446::0::1::::<>CollisionShape2D<><>0<>0<><>::
 deadwurt.gd::GDScript/GDScript::3148156513411350863::1757931843::0::1::::<>RigidBody2D<><>0<>0<><>::
 diearea.gd::GDScript/GDScript::5543012589777093868::1757931843::0::1::::<>Area2D<><>0<>0<><>::
-diecollison.gd::GDScript/GDScript::622170388017751145::1757931843::0::1::::<>CollisionShape2D<><>0<>0<><>::
+diecollison.gd::GDScript::622170388017751145::1757991733::0::1::::<>CollisionShape2D<><>0<>0<><>::
 globals.gd::GDScript/GDScript::6698709409657020991::1757931843::0::1::::<>Node<><>0<>0<><>::
 grabarea.gd::GDScript/GDScript::1323244701638054093::1757931843::0::1::::<>Area2D<><>0<>0<><>::
 grabhandler.gd::GDScript/GDScript::7462864927451424157::1757931843::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::5118133962856643552::1757639765::1757639768::1::::<><><>0<>0<>b187c286d164899cfa517a48e22a00a6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 player.gd::GDScript/GDScript::7358536705878659718::1757931843::0::1::::<>RefCounted<><>0<>0<><>::
-scene.tscn::PackedScene::7775778299095167509::1757933418::0::1::::<><><>0<>0<><>::uid://dfi44m0kwgyjm::::res://sprites/env/chioce_1_png/frame_001.png<>uid://baq0yeo3nrhbw::::res://sprites/env/chioce_1_png/frame_002.png<>uid://qseah1pri1jf::::res://sprites/walk cycle/New_Piskel6.png<>uid://br62vpgea5yao::::res://sprites/walk cycle/tile000.png<>uid://dhli1u7okua7h::::res://sprites/env/chioce_1_png/frame_003.png<>uid://duigur3ri8f1r::::res://sprites/env/chioce_1_png/frame_004.png<>uid://c58gah60sj3as::::res://sprites/env/Polished-Concrete-Floor-Texture-For-Free-2934769733.jpg<>uid://ciuvpqfcp0lsb::::res://sprites/env/chioce_1_png/frame_005.png<>uid://dhbbbo0wxxe7p::::res://sprites/env/reclaimed-wood-01-tirol-pro-b-arcit18-21792003.jpg<>uid://bq4n7kw54fj12::::res://sprites/env/chioce_1_png/frame_006.png<>uid://doysm3jpsmh61::::res://sounds/sog/SOGLINES (mp3cut.net).mp3<>uid://b0c3pukubrcwd::::res://collision_shape_2d.gd<>uid://csq4ufwnll678::::res://sounds/wurt/JUJMPY.wav<>uid://bbydpyom8k6c2::::res://sounds/env/song no drums.mp3<>uid://2pknlmdli3qq::::res://sprites/env/cbfodsel.jpg
+scene.tscn::PackedScene::7775778299095167509::1757996345::0::1::::<><><>0<>0<><>::uid://dfi44m0kwgyjm::::res://sprites/env/chioce_1_png/frame_001.png<>uid://baq0yeo3nrhbw::::res://sprites/env/chioce_1_png/frame_002.png<>uid://qseah1pri1jf::::res://sprites/walk cycle/New_Piskel6.png<>uid://br62vpgea5yao::::res://sprites/walk cycle/tile000.png<>uid://dhli1u7okua7h::::res://sprites/env/chioce_1_png/frame_003.png<>uid://duigur3ri8f1r::::res://sprites/env/chioce_1_png/frame_004.png<>uid://c58gah60sj3as::::res://sprites/env/Polished-Concrete-Floor-Texture-For-Free-2934769733.jpg<>uid://ciuvpqfcp0lsb::::res://sprites/env/chioce_1_png/frame_005.png<>uid://dhbbbo0wxxe7p::::res://sprites/env/reclaimed-wood-01-tirol-pro-b-arcit18-21792003.jpg<>uid://bq4n7kw54fj12::::res://sprites/env/chioce_1_png/frame_006.png<>uid://doysm3jpsmh61::::res://sounds/sog/SOGLINES (mp3cut.net).mp3<>uid://b0c3pukubrcwd::::res://collision_shape_2d.gd<>uid://csq4ufwnll678::::res://sounds/wurt/JUJMPY.wav<>uid://bbydpyom8k6c2::::res://sounds/env/song no drums.mp3<>uid://8unu67ltm3p3::::res://sprites/env/eclipse-martes.jpg
 spawner.gd::GDScript/GDScript::2296154526355608726::1757931843::0::1::::<>Node2D<><>0<>0<><>::
 spawner.tscn::PackedScene/PackedScene::1166022006015352561::1757931843::0::1::::<><><>0<>0<><>::uid://7yjlg8xhg4vy::::res://spawner.gd
 ::res://sounds/::1757732376
@@ -23,8 +23,10 @@ spawner.tscn::PackedScene/PackedScene::1166022006015352561::1757931843::0::1::::
 song no drums.mp3::AudioStreamMP3/AudioStreamMP3::2506364814092859323::1757732363::1757732380::1::::<><><>0<>0<>5633e4fc2e0694a324f5d115bc296ac0<>res://.godot/imported/song no drums.mp3-3c63ee6f2b52db89acb3019787ad2d82.mp3str::
 ::res://sounds/sog/::1757665706
 SOGLINES (mp3cut.net).mp3::AudioStreamMP3/AudioStreamMP3::8192566748768956276::1757665679::1757665706::1::::<><><>0<>0<>55c2a059d6e96acf392d58b961c14307<>res://.godot/imported/SOGLINES (mp3cut.net).mp3-d44499af6ae20f586e496983018a28ae.mp3str::
-::res://sounds/wurt/::1757729076
+::res://sounds/wurt/::1757997061
 JUJMPY.wav::AudioStreamWAV/AudioStreamWAV::6071067402812344197::1757729053::1757729076::1::::<><><>0<>0<>201bcb4b813c690bca04cde289867fcc<>res://.godot/imported/JUJMPY.wav-741b600810570d18ec20feaa79d188c1.sample::
+wurt grunt weird strange dont like it.mp3::AudioStreamMP3::8731425209983805017::1757997044::1757997065::1::::<><><>0<>0<>27784ccc5dd6f217259148f16a847081<>res://.godot/imported/wurt grunt weird strange dont like it.mp3-24a1e52f929cacd0c3397ef9ab9b8480.mp3str::
+wurt scream death.mp3::AudioStreamMP3::4675259993850182059::1757997028::1757997065::1::::<><><>0<>0<>5d6435f5541999e9dfe7b980ba14257a<>res://.godot/imported/wurt scream death.mp3-614648b983c95b5c16b9498900c27f06.mp3str::
 ::res://sprites/::1757748559
 ::res://sprites/env/::1757851422
 1000_F_314764973_jbAtYnVJSPbpLkhHEr4l0Oc5YCt5BT2k-1643239317.jpg::CompressedTexture2D/CompressedTexture2D::9087101141622103510::1757667214::1757667215::1::::<><><>0<>0<>57d3f1d5e5d0ca1477b2b203837226f8<>res://.godot/imported/1000_F_314764973_jbAtYnVJSPbpLkhHEr4l0Oc5YCt5BT2k-1643239317.jpg-cb022bdb60fb5d82ba4f9cb14d7fe96e.ctex::

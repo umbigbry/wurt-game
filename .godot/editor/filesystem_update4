@@ -2,3 +2,4 @@ res://scene.tscn
 res://box_1.gd
 res://collision_shape_2d_2.gd
 res://boxes.tscn
+res://diecollison.gd
